@@ -6,7 +6,7 @@ const messageInput = document.getElementById('message-input')
 
 // First time taking the name of the user
 const username  = prompt("Enter Your Name")
-appendMessage("You Joined")
+appendMessage("You joined")
 socket.emit('user-joined', username)
 
 
@@ -15,11 +15,11 @@ socket.on('chat-message', msg =>{
 })
 
 socket.on('user-connected', name =>{
-    appendMessage(`${name} Joined`)
+    appendMessage(` ${name}  joined`)
 })
 
 socket.on('user-disconnected', name =>{
-    appendMessage(`${name} Disconnected`)
+    appendMessage(` ${name} disconnected`)
 })
 
 
@@ -40,4 +40,4 @@ function appendMessage(message) {
     const messageElement = document.createElement('div')
     messageElement.innerText = message
     messageContainer.append(messageElement)
-}
+}   
