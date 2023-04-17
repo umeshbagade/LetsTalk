@@ -1,2 +1,3 @@
 # LetsTalk
-A simple Chat application using Socketio
+A simple Chat application using socket.io
+Here you can communicate with you friends.
